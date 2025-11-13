@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Educativa - Cienc-IA Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-profundo: #0A2647;
+            --cian-brillante: #00B4D8;
+            --blanco-puro: #FFFFFF;
+            --verde-cientifico: #52B788;
+            --gris-neutro: #D9D9D9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--azul-profundo);
+            line-height: 1.6;
+            background-color: var(--blanco-puro);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--azul-profundo);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--cian-brillante);
+            color: var(--blanco-puro);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--azul-profundo);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 1.5rem;
+        }
+
+        nav a {
+            color: var(--blanco-puro);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-oferta {
+            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/hero/hero-oferta.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--blanco-puro);
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        /* Programs Section */
+        .programs-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        /* Course Cards */
+        .course-detail {
+            background-color: var(--blanco-puro);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .course-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--cian-brillante);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--blanco-puro);
+            font-size: 1.2rem;
+        }
+
+        .course-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .feature-icon {
+            margin-right: 0.8rem;
+            color: var(--verde-cientifico);
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco-puro);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <img src="../assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="modelo-academico.html">Modelo Académico</a></li>
+                    <li><a href="oferta-educativa.html">Oferta Educativa</a></li>
+                    <li><a href="innovacion-ia.html">Innovación IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#" class="btn">Inscríbete ahora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-oferta">
+        <div class="container">
+            <h1>Oferta Educativa</h1>
+            <p>Programas diseñados para tu éxito académico</p>
+        </div>
+    </section>
+
+    <!-- Programs Introduction -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Programas Diseñados para Tu Futuro</h2>
+            <div class="programs-intro">
+                <h3>Elige tu meta académica</h3>
+                <p>En Cienc-IA Academy, no solo cubrimos el temario; creamos una estrategia personalizada para ti.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course 1: Preparatoria -->
+    <section style="background-color: var(--gris-neutro);">
+        <div class="container">
+            <div class="course-detail">
+                <div class="course-header">
+                    <div class="course-icon">1</div>
+                    <div>
+                        <h3>Curso de Ingreso a Preparatoria (COMIPEMS / CENEVAL)</h3>
+                        <p><strong>Domina el examen. Asegura tu lugar.</strong></p>
+                    </div>
+                </div>
+                <p>Un programa integral de 22 semanas diseñado para que domines todos los temas del examen de ingreso al bachillerato. No dejamos tu futuro al azar; nuestra IA identifica tus áreas débiles exactas y personaliza tu repaso para maximizar tu puntaje.</p>
+                
+                <h4 style="margin-top: 1.5rem;">¿Qué incluye?</h4>
+                <div class="course-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Módulos completos:</strong> Matemáticas Fundamentales, Pensamiento Lógico, Ciencias Naturales y Habilidades Verbales.
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Simulacros Inteligentes:</strong> Pruebas tipo examen con cronómetro y analítica de progreso.
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Asistente IA 24/7</strong> para resolución de dudas y práctica adaptativa.
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Ver temario completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course 2: Universidad -->
+    <section>
+        <div class="container">
+            <div class="course-detail">
+                <div class="course-header">
+                    <div class="course-icon">2</div>
+                    <div>
+                        <h3>Curso de Ingreso a Universidad (UNAM / IPN / UAM)</h3>
+                        <p><strong>La preparación genérica no funciona. Necesitas precisión.</strong></p>
+                    </div>
+                </div>
+                <p>Programa intensivo enfocado en la complejidad real de los exámenes de nivel superior. Te preparamos con precisión quirúrgica en los temas que realmente importan, combinando docentes expertos con simuladores de alta dificultad.</p>
+                
+                <h4 style="margin-top: 1.5rem;">¿Qué incluye?</h4>
+                <div class="course-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Ciencias Avanzadas:</strong> Cálculo, Física Dinámica, Química Orgánica y Biología Genética.
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Estrategia de Examen:</strong> Taller de razonamiento lógico y manejo de tiempos.
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Simuladores tipo UNAM/IPN</strong> con predicción de resultados.
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Ver temario completo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course 3: Regularización -->
+    <section style="background-color: var(--gris-neutro);">
+        <div class="container">
+            <div class="course-detail">
+                <div class="course-header">
+                    <div class="course-icon">3</div>
+                    <div>
+                        <h3>Cursos de Regularización (Secundaria y Preparatoria)</h3>
+                        <p><strong>Domina las ciencias, olvida el estrés.</strong></p>
+                    </div>
+                </div>
+                <p>¿Problemas con Matemáticas o Física? Ofrecemos regularización académica 100% en línea para niveles de Secundaria y Preparatoria. Refuerza tus conocimientos en las asignaturas clave: Matemáticas, Física, Química y Biología.</p>
+                
+                <h4 style="margin-top: 1.5rem;">Metodología</h4>
+                <div class="course-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Diagnóstico inicial</strong> para identificar áreas de oportunidad
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Ruta de aprendizaje personalizada</strong> según tus necesidades
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Seguimiento continuo</strong> para mejorar tus calificaciones escolares
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Inscríbete ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="text-align: center;">
+        <div class="container">
+            <h2>¿No estás seguro de cuál programa elegir?</h2>
+            <p>Realiza nuestro examen diagnóstico gratuito y recibe recomendaciones personalizadas</p>
+            <a href="contacto.html" class="btn" style="background-color: var(--verde-cientifico); margin-top: 1.5rem;">Realizar diagnóstico gratuito</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Cienc-IA Academy</h3>
+                    <p>"Ciencia que evoluciona contigo."</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="modelo-academico.html">Modelo Académico</a></li>
+                        <li><a href="oferta-educativa.html">Oferta Educativa</a></li>
+                        <li><a href="innovacion-ia.html">Innovación IA</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cienc-IA Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

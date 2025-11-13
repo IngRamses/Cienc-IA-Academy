@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cienc-IA Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-profundo: #0A2647;
+            --cian-brillante: #00B4D8;
+            --blanco-puro: #FFFFFF;
+            --verde-cientifico: #52B788;
+            --gris-neutro: #D9D9D9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--azul-profundo);
+            line-height: 1.6;
+            background-color: var(--blanco-puro);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--azul-profundo);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--cian-brillante);
+            color: var(--blanco-puro);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--azul-profundo);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 1.5rem;
+        }
+
+        nav a {
+            color: var(--blanco-puro);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-contacto {
+            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/hero/hero-contacto.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--blanco-puro);
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info {
+            background-color: var(--gris-neutro);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            margin-right: 1rem;
+            color: var(--cian-brillante);
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--gris-neutro);
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco-puro);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <img src="../assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="modelo-academico.html">Modelo Académico</a></li>
+                    <li><a href="oferta-educativa.html">Oferta Educativa</a></li>
+                    <li><a href="innovacion-ia.html">Innovación IA</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#" class="btn">Inscríbete ahora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-contacto">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para responder todas tus preguntas</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">¿Tienes dudas? Escríbenos</h2>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@ciencia-academy.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p>+52 55 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <strong>Horario de Atención</strong>
+                            <p>Lunes a Viernes: 9:00 - 18:00 hrs</p>
+                            <p>Sábados: 9:00 - 14:00 hrs</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Ciudad de México, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="curso">Curso de interés</label>
+                            <select id="curso" name="curso">
+                                <option value="">Selecciona una opción</option>
+                                <option value="preparatoria">Ingreso a Preparatoria</option>
+                                <option value="universidad">Ingreso a Universidad</option>
+                                <option value="regulares">Cursos Regulares</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background-color: var(--gris-neutro); text-align: center;">
+        <div class="container">
+            <h2>¿Prefieres una asesoría personalizada?</h2>
+            <p>Agenda una cita con uno de nuestros especialistas</p>
+            <a href="#" class="btn" style="margin-top: 1.5rem;">Agendar asesoría gratuita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Cienc-IA Academy</h3>
+                    <p>"Ciencia que evoluciona contigo."</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="modelo-academico.html">Modelo Académico</a></li>
+                        <li><a href="oferta-educativa.html">Oferta Educativa</a></li>
+                        <li><a href="innovacion-ia.html">Innovación IA</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cienc-IA Academy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
