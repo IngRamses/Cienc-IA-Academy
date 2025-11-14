@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cienc-IA Academy - Aprende ciencIA con inteligencIA</title>
+    <title>Cienc-IA Academy - Ciencia que evoluciona contigo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -140,7 +140,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('assets/images/header_portada.jpg');
+            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('assets/images/hero/hero-home.jpg');
             background-size: cover;
             background-position: center;
             color: var(--blanco-puro);
@@ -176,6 +176,7 @@
             padding: 2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            text-align: center;
         }
 
         .why-card:hover {
@@ -188,9 +189,17 @@
         }
 
         .why-card-icon {
-            font-size: 2.5rem;
-            color: var(--verde-cientifico);
-            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .why-card-icon img {
+            width: 100%;
+            height: auto;
         }
 
         /* Courses Section */
@@ -218,12 +227,13 @@
 
         .course-card-img {
             height: 200px;
-            background-color: var(--cian-brillante);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--blanco-puro);
-            font-size: 1.5rem;
+            overflow: hidden;
+        }
+
+        .course-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .course-card-content {
@@ -361,7 +371,7 @@
     <header>
         <div class="container header-container">
             <!-- Logo con ruta correcta -->
-            <img src="assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <img src="assets/images/general/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
             <button class="mobile-menu-btn">☰</button>
             <nav>
                 <ul>
@@ -380,7 +390,7 @@
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
-            <h1>Aprende ciencIA con inteligencIA</h1>
+            <h1>El futuro de la ciencia se aprende hoy.</h1>
             <p>En Cienc-IA Academy combinamos pedagogía científica moderna con tecnología de IA personalizada para formar las mentes científicas del mañana.</p>
             <a href="#cursos" class="btn">Descubre nuestros cursos</a>
         </div>
@@ -392,17 +402,23 @@
             <h2 class="section-title">¿Por qué Cienc-IA Academy?</h2>
             <div class="why-cards">
                 <div class="why-card">
-                    <div class="why-card-icon">🔬</div>
+                    <div class="why-card-icon">
+                        <img src="assets/images/icons/icon-pedagogia.svg" alt="Pedagogía Científica">
+                    </div>
                     <h3>Pedagogía Científica Moderna</h3>
                     <p>Nuestro enfoque se basa en las últimas investigaciones en neurociencia y pedagogía para maximizar el aprendizaje.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-card-icon">🤖</div>
+                    <div class="why-card-icon">
+                        <img src="assets/images/icons/icon-ia.svg" alt="IA Personalizada">
+                    </div>
                     <h3>IA Personalizada</h3>
                     <p>Cada estudiante accede a un sistema que adapta el contenido según su desempeño y ritmo de aprendizaje.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-card-icon">👨‍🏫</div>
+                    <div class="why-card-icon">
+                        <img src="assets/images/icons/icon-docentes.svg" alt="Docentes Amplificados">
+                    </div>
                     <h3>Docentes Amplificados</h3>
                     <p>En Cienc-IA Academy, la IA no sustituye al docente: lo amplifica, permitiendo una atención más personalizada.</p>
                 </div>
@@ -416,7 +432,9 @@
             <h2 class="section-title">Nuestra Oferta Educativa</h2>
             <div class="course-cards">
                 <div class="course-card">
-                    <div class="course-card-img">Ingreso a Preparatoria</div>
+                    <div class="course-card-img">
+                        <img src="assets/images/courses/curso-preparatoria.jpg" alt="Curso de Ingreso a Preparatoria">
+                    </div>
                     <div class="course-card-content">
                         <h3>Curso de Ingreso a Preparatoria</h3>
                         <p>Fortalecer competencias académicas básicas para el examen de ingreso a preparatoria.</p>
@@ -424,7 +442,9 @@
                     </div>
                 </div>
                 <div class="course-card">
-                    <div class="course-card-img">Ingreso a Universidad</div>
+                    <div class="course-card-img">
+                        <img src="assets/images/courses/curso-universidad.jpg" alt="Curso de Ingreso a Universidad">
+                    </div>
                     <div class="course-card-content">
                         <h3>Curso de Ingreso a Universidad</h3>
                         <p>Dominar bases para exámenes de ingreso a las principales universidades (UNAM, IPN, UAM).</p>
@@ -432,7 +452,9 @@
                     </div>
                 </div>
                 <div class="course-card">
-                    <div class="course-card-img">Cursos Regulares</div>
+                    <div class="course-card-img">
+                        <img src="assets/images/courses/curso-regulares.jpg" alt="Cursos Regulares">
+                    </div>
                     <div class="course-card-content">
                         <h3>Cursos Regulares</h3>
                         <p>Refuerzo escolar para estudiantes de secundaria y preparatoria en matemáticas, física, química y biología.</p>
@@ -506,8 +528,8 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contacto</h3>
-                    <p>Email: ing.ramses.lopez@gmail.com</p>
-                    <p>Whatsapp: +52 55 74555032</p>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
                     <p>Horario: Lunes a Viernes 9:00 - 18:00</p>
                 </div>
             </div>
