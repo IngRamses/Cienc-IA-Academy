@@ -14,7 +14,6 @@
             --blanco-puro: #FFFFFF;
             --verde-cientifico: #52B788;
             --gris-neutro: #D9D9D9;
-            --azul-iconos: #1A4B8C;
         }
 
         * {
@@ -104,7 +103,7 @@
 
         /* Hero Section */
         .hero-model {
-            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/hero/hero-modelo.jpg');
+            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/courses_portada.jpg');
             background-size: cover;
             background-position: center;
             color: var(--blanco-puro);
@@ -133,31 +132,23 @@
 
         .model-step {
             text-align: center;
-            padding: 2.5rem 1.5rem;
+            padding: 2rem 1rem;
             background-color: var(--blanco-puro);
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .model-step:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .model-step-icon {
-            margin-bottom: 1.5rem;
+            width: 80px;
+            height: 80px;
+            background-color: var(--cian-brillante);
+            border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            height: 120px;
-        }
-
-        .model-step-icon img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            /* Se eliminó el filtro para mantener los colores originales */
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: var(--blanco-puro);
+            font-size: 1.5rem;
         }
 
         /* Evaluation Section */
@@ -176,11 +167,6 @@
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .evaluation-item:hover {
-            transform: translateY(-3px);
         }
 
         .evaluation-percentage {
@@ -188,12 +174,6 @@
             font-weight: bold;
             color: var(--verde-cientifico);
             margin-bottom: 0.5rem;
-        }
-
-        .content-center {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
         }
 
         /* Footer */
@@ -210,19 +190,6 @@
             margin-bottom: 2rem;
         }
 
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-column a {
-            color: var(--blanco-puro);
-            text-decoration: none;
-        }
-
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
@@ -234,7 +201,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <img src="../assets/images/general/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <img src="../assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -273,33 +240,25 @@
     <section style="background-color: var(--gris-neutro);">
         <div class="container">
             <h2 class="section-title">La Metodología 4C: Nuestro Pilar Pedagógico</h2>
-            <p class="content-center" style="margin-bottom: 3rem;">Todo nuestro currículo, desde una clase de física hasta un curso de ingreso a la universidad, se estructura bajo nuestra Metodología 4C. No solo enseñamos ciencia; enseñamos cómo pensar científicamente.</p>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Todo nuestro currículo, desde una clase de física hasta un curso de ingreso a la universidad, se estructura bajo nuestra Metodología 4C. No solo enseñamos ciencia; enseñamos cómo pensar científicamente.</p>
             <div class="model-4c">
                 <div class="model-step">
-                    <div class="model-step-icon">
-                        <img src="../assets/images/icons/icon-comprender.svg" alt="Comprender">
-                    </div>
+                    <div class="model-step-icon">1</div>
                     <h3>Comprender</h3>
                     <p>Dominar los fundamentos teóricos. Aseguramos que cada estudiante construya una base sólida de los conceptos científicos y las leyes que rigen el universo.</p>
                 </div>
                 <div class="model-step">
-                    <div class="model-step-icon">
-                        <img src="../assets/images/icons/icon-conectar.svg" alt="Conectar">
-                    </div>
+                    <div class="model-step-icon">2</div>
                     <h3>Conectar</h3>
                     <p>Vincular la teoría con la práctica. Demostramos cómo las fórmulas y los conceptos se aplican en el mundo real, conectando las ciencias entre sí y con aplicaciones transversales.</p>
                 </div>
                 <div class="model-step">
-                    <div class="model-step-icon">
-                        <img src="../assets/images/icons/icon-crear.svg" alt="Crear">
-                    </div>
+                    <div class="model-step-icon">3</div>
                     <h3>Crear</h3>
                     <p>Resolver problemas reales. Impulsamos a los estudiantes a usar su conocimiento para crear soluciones, diseñar experimentos y resolver problemas complejos, tal como lo hace un científico.</p>
                 </div>
                 <div class="model-step">
-                    <div class="model-step-icon">
-                        <img src="../assets/images/icons/icon-comunicar.svg" alt="Comunicar">
-                    </div>
+                    <div class="model-step-icon">4</div>
                     <h3>Comunicar</h3>
                     <p>Compartir el conocimiento. La ciencia que no se comparte, no avanza. Desarrollamos habilidades de presentación científica, argumentación y trabajo colaborativo.</p>
                 </div>
@@ -311,8 +270,8 @@
     <section class="evaluation-section">
         <div class="container">
             <h2 class="section-title">Evaluación Continua e Inteligente</h2>
-            <p class="content-center" style="margin-bottom: 3rem;">Evaluamos más que la memoria. Nuestro sistema se enfoca en la Evaluación Continua (incluyendo evaluaciones parciales y proyectos finales) y en la Evaluación por Competencias.</p>
-            <p class="content-center" style="margin-bottom: 3rem;"><strong>Medimos el balance completo del aprendizaje:</strong></p>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Evaluamos más que la memoria. Nuestro sistema se enfoca en la Evaluación Continua (incluyendo evaluaciones parciales y proyectos finales) y en la Evaluación por Competencias.</p>
+            <p style="text-align: center; margin-bottom: 3rem;"><strong>Medimos el balance completo del aprendizaje:</strong></p>
             <div class="evaluation-grid">
                 <div class="evaluation-item">
                     <div class="evaluation-percentage">25%</div>
@@ -353,7 +312,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Cienc-IA Academy</h3>
-                    <p>"Aprende CiencIA con InteligencIA"</p>
+                    <p>"Ciencia que evoluciona contigo."</p>
                 </div>
                 <div class="footer-column">
                     <h3>Enlaces rápidos</h3>
@@ -368,8 +327,8 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contacto</h3>
-                    <p>Email: ing.ramses.lopez@gmail.com</p>
-                    <p>Teléfono: +52 55 7455 5032</p>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
                 </div>
             </div>
             <div class="footer-bottom">

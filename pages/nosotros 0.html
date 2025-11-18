@@ -14,7 +14,6 @@
             --blanco-puro: #FFFFFF;
             --verde-cientifico: #52B788;
             --gris-neutro: #D9D9D9;
-            --azul-iconos: #1A4B8C;
         }
 
         * {
@@ -104,7 +103,7 @@
 
         /* Hero Section */
         .hero-about {
-            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/hero/hero-nosotros.jpg');
+            background: linear-gradient(rgba(10, 38, 71, 0.8), rgba(10, 38, 71, 0.8)), url('../assets/images/about_equipo.jpg');
             background-size: cover;
             background-position: center;
             color: var(--blanco-puro);
@@ -162,27 +161,12 @@
             padding: 2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .value-icon {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-        }
-
-        .value-icon img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            filter: brightness(0) saturate(100%) invert(22%) sepia(70%) saturate(1500%) hue-rotate(200deg) brightness(90%) contrast(90%);
+            color: var(--verde-cientifico);
         }
 
         /* Footer */
@@ -199,19 +183,6 @@
             margin-bottom: 2rem;
         }
 
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-column a {
-            color: var(--blanco-puro);
-            text-decoration: none;
-        }
-
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
@@ -223,7 +194,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <img src="../assets/images/general/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <img src="../assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -287,44 +258,32 @@
             <h2 class="section-title">Nuestros Valores</h2>
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-innovacion.svg" alt="Innovación">
-                    </div>
+                    <div class="value-icon">🚀</div>
                     <h3>Innovación</h3>
                     <p>Promovemos el uso ético y creativo de la IA para transformar la enseñanza y el aprendizaje.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-excelencia.svg" alt="Excelencia">
-                    </div>
+                    <div class="value-icon">⭐</div>
                     <h3>Excelencia</h3>
                     <p>Buscamos la mejora continua en cada clase, programa y tecnología que aplicamos.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-curiosidad.svg" alt="Curiosidad Científica">
-                    </div>
+                    <div class="value-icon">🔍</div>
                     <h3>Curiosidad Científica</h3>
                     <p>Fomentamos la exploración, la observación y el razonamiento lógico como pilares del conocimiento.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-inclusion.svg" alt="Inclusión">
-                    </div>
+                    <div class="value-icon">🌍</div>
                     <h3>Inclusión</h3>
                     <p>Ofrecemos educación accesible y adaptada a distintos ritmos de aprendizaje y contextos.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-responsabilidad.svg" alt="Responsabilidad Social">
-                    </div>
+                    <div class="value-icon">🤝</div>
                     <h3>Responsabilidad Social</h3>
                     <p>Aplicamos la ciencia y la tecnología para generar un impacto positivo en nuestra comunidad.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../assets/images/icons/icon-integridad.svg" alt="Integridad">
-                    </div>
+                    <div class="value-icon">💎</div>
                     <h3>Integridad</h3>
                     <p>Valoramos la honestidad intelectual, el respeto y el compromiso con la verdad científica.</p>
                 </div>
@@ -338,7 +297,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Cienc-IA Academy</h3>
-                    <p>"Aprende ciencia con ingeligencia."</p>
+                    <p>"Ciencia que evoluciona contigo."</p>
                 </div>
                 <div class="footer-column">
                     <h3>Enlaces rápidos</h3>
@@ -353,8 +312,8 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contacto</h3>
-                    <p>Email: ing.ramses.lopez@gmail.com</p>
-                    <p>Teléfono: +52 55 74555032</p>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
                 </div>
             </div>
             <div class="footer-bottom">
