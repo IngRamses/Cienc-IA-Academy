@@ -14,7 +14,6 @@
             --blanco-puro: #FFFFFF;
             --verde-cientifico: #52B788;
             --gris-neutro: #D9D9D9;
-            --azul-iconos: #1A4B8C;
         }
 
         * {
@@ -129,30 +128,15 @@
         .tool-card {
             background-color: var(--blanco-puro);
             border-radius: 8px;
-            padding: 2.5rem 2rem;
+            padding: 2rem;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .tool-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .tool-icon {
-            margin-bottom: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 140px;
-        }
-
-        .tool-icon img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            filter: brightness(0) saturate(100%) invert(22%) sepia(70%) saturate(1500%) hue-rotate(200deg) brightness(90%) contrast(90%);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--verde-cientifico);
         }
 
         .ai-assistants {
@@ -168,35 +152,15 @@
         .assistant-card {
             background-color: var(--blanco-puro);
             border-radius: 8px;
-            padding: 2rem 1.5rem;
+            padding: 1.5rem;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .assistant-card:hover {
-            transform: translateY(-3px);
         }
 
         .assistant-icon {
-            margin-bottom: 1.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 120px;
-        }
-
-        .assistant-icon img {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            filter: brightness(0) saturate(100%) invert(22%) sepia(70%) saturate(1500%) hue-rotate(200deg) brightness(90%) contrast(90%);
-        }
-
-        .content-block {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--cian-brillante);
         }
 
         /* Footer */
@@ -213,19 +177,6 @@
             margin-bottom: 2rem;
         }
 
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-column a {
-            color: var(--blanco-puro);
-            text-decoration: none;
-        }
-
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
@@ -237,7 +188,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <img src="../assets/images/general/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
+            <img src="../assets/images/logo-ciencia-academy.png" alt="Cienc-IA Academy" class="logo">
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -277,23 +228,17 @@
             <h2 class="section-title">Nuestras Herramientas de IA</h2>
             <div class="tools-grid">
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <img src="../assets/images/icons/icon-chatbot.svg" alt="Asistentes Inteligentes">
-                    </div>
+                    <div class="tool-icon">🤖</div>
                     <h3>Asistentes Inteligentes por Materia</h3>
                     <p>Olvídate de quedarte con dudas a media noche. Contamos con asistentes virtuales especializados para cada área de la ciencia, listos para guiarte paso a paso.</p>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <img src="../assets/images/icons/icon-evaluacion.svg" alt="Evaluación Adaptativa">
-                    </div>
+                    <div class="tool-icon">📊</div>
                     <h3>Evaluación Adaptativa</h3>
                     <p>No pierdas tiempo repasando lo que ya sabes. Nuestro sistema ajusta la dificultad en tiempo real según tu desempeño.</p>
                 </div>
                 <div class="tool-card">
-                    <div class="tool-icon">
-                        <img src="../assets/images/icons/icon-analitica.svg" alt="Analítica de Progreso">
-                    </div>
+                    <div class="tool-icon">📈</div>
                     <h3>Analítica de Progreso</h3>
                     <p>Lo que no se mide, no se mejora. Accede a reportes claros sobre tu avance académico e identifica áreas de oportunidad.</p>
                 </div>
@@ -307,30 +252,22 @@
             <h2 class="section-title">Asistentes Inteligentes por Materia</h2>
             <div class="assistants-grid">
                 <div class="assistant-card">
-                    <div class="assistant-icon">
-                        <img src="../assets/images/icons/modulo-matematicas.svg" alt="MatemáticasAI">
-                    </div>
+                    <div class="assistant-icon">∫</div>
                     <h4>MatemáticasAI</h4>
                     <p>Resolución guiada de problemas y ejemplos paso a paso.</p>
                 </div>
                 <div class="assistant-card">
-                    <div class="assistant-icon">
-                        <img src="../assets/images/icons/modulo-fisica.svg" alt="FísicaAI">
-                    </div>
+                    <div class="assistant-icon">⚡</div>
                     <h4>FísicaAI</h4>
                     <p>Simulaciones de leyes físicas y ejercicios dinámicos.</p>
                 </div>
                 <div class="assistant-card">
-                    <div class="assistant-icon">
-                        <img src="../assets/images/icons/modulo-quimica.svg" alt="QuímicaAI">
-                    </div>
+                    <div class="assistant-icon">🧪</div>
                     <h4>QuímicaAI</h4>
                     <p>Ayuda con nomenclatura y balanceo de ecuaciones.</p>
                 </div>
                 <div class="assistant-card">
-                    <div class="assistant-icon">
-                        <img src="../assets/images/icons/modulo-biologia.svg" alt="BiologíaAI">
-                    </div>
+                    <div class="assistant-icon">🧬</div>
                     <h4>BiologíaAI</h4>
                     <p>Modelos y repasos interactivos de conceptos biológicos.</p>
                 </div>
@@ -341,7 +278,7 @@
     <!-- Evaluation Adaptive Section -->
     <section>
         <div class="container">
-            <div class="content-block">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2>Evaluación Adaptativa</h2>
                 <p>Nuestro sistema de evaluación ajusta la dificultad de las preguntas en tiempo real según tu desempeño. Si dominas un tema, avanzamos; si necesitas refuerzo, el sistema te da más práctica automáticamente.</p>
             </div>
@@ -351,7 +288,7 @@
     <!-- Analytics Section -->
     <section style="background-color: var(--gris-neutro);">
         <div class="container">
-            <div class="content-block">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2>Analítica de Progreso (Tu Tablero de Control)</h2>
                 <p>Lo que no se mide, no se mejora. Tanto estudiantes como padres tienen acceso a reportes claros sobre el avance académico, identificando fortalezas y detectando riesgos antes de que se conviertan en problemas.</p>
             </div>
@@ -373,7 +310,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Cienc-IA Academy</h3>
-                    <p>"Aprende Cienc-IA con Inteligenc-IA"</p>
+                    <p>"Ciencia que evoluciona contigo."</p>
                 </div>
                 <div class="footer-column">
                     <h3>Enlaces rápidos</h3>
@@ -388,8 +325,8 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contacto</h3>
-                    <p>Email: ing.ramses.lopez@gmail.com</p>
-                    <p>Teléfono: +52 55 7455 5032</p>
+                    <p>Email: info@ciencia-academy.edu</p>
+                    <p>Teléfono: +52 55 1234 5678</p>
                 </div>
             </div>
             <div class="footer-bottom">
